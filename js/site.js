@@ -1,26 +1,26 @@
 const navs = [{
     Text: 'Home',
     Url: 'index.html',
-    Class: 'Home',
+    Class: 'home',
     Alt: 'Click here to visit home'
 },
 {
-    Text: 'Acrylic Pour Painting',
-    Url: 'acrylicPourPainting.html',
-    Class: 'link-1',
-    Alt: 'Click Here to visit Acrylic Pour Painting'
+    Text: 'Fluid Painting',
+    Url: 'fluidPainting.html',
+    Class: 'fluidPainting',
+    Alt: 'Click here to visit Fluid Painting'
 },
 {
     Text: 'String Art',
     Url: 'stringArt.html',
-    Class: 'link-2',
+    Class: 'stringArt',
     Alt: 'Click here to visit String Art'
 },
 {
     Text: 'Alcohol Ink',
     Url: 'alcoholInk.html',
-    Class: 'link-3',
-    Alt: 'Click Here to visit Alcohol Ink'
+    Class: 'alcoholInk',
+    Alt: 'Click here to visit Alcohol Ink'
 }
 
 

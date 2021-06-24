@@ -1,11 +1,24 @@
 /* HTML and Body styles */
-
+html, body {
+    background-color: #d2a39e;
+}
 
 /* Header styles */
-
+#navId {
+    text-decoration: none;
+}
 
 /* Main styles */
+.steps {
+    background-color: #aea0ac;
+    color: #3A3437;
+}
 
+.steps h3 {
+    background-color: #3a4647;
+    color: #aea0ac;
+
+}
 
 /* Footer styles */
 

@@ -5,7 +5,29 @@
 
 
 /* Main styles */
+.steps {
+    display: flex;
+    flex-flow: column;
+    margin: 0 0.5em;
+}
 
+.steps h3 {
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.steps ul, .steps p {
+    margin: 0 .75em;
+}
+
+.steps:nth-child(10) {
+    padding-bottom: 1em;
+}
 
 /* Footer styles */
+footer {
+    text-align: center;
+    margin: .75em 0;
+}
 
+@
