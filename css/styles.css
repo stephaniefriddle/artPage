@@ -4,8 +4,8 @@ html, body {
 }
 
 /* Header styles */
-#navId {
-    text-decoration: none;
+.nav {
+    background-color: #d2a39e;
 }
 
 /* Main styles */

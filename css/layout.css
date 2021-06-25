@@ -1,10 +1,43 @@
-/* HTML and Body styles */
+/* HTML and Body layout */
 
 
-/* Header styles */
+/* Header layout */
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 5%;
+}
 
+.nav {
+    display: flex;
+    position: absolute;
+    right: -100%;
+    top: 60px;
+    width: 40%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transition: 400ms;
+    list-style: none;
+}
 
-/* Main styles */
+.nav a {
+    text-decoration: none;
+}
+
+.nav-active {
+    right: 0;
+}
+
+.burger {
+    display: block;
+    padding-right: 60px;    
+}
+
+/* Main layout */
 .steps {
     display: flex;
     flex-flow: column;
@@ -31,10 +64,32 @@ I want to remove the top margin so it starts with the step color
     padding-bottom: 1em;
 }
 
-/* Footer styles */
+/* Footer layout */
 footer {
     text-align: center;
     margin: .75em 0;
 }
 
-@
+@media screen and (min-width: 600px) {
+    .nav {
+        display: flex;
+        position: relative;
+        right: auto;
+        top: auto;
+        flex-direction: row;
+        padding: 0;
+    }
+    .navlink {
+        display: block;
+        list-style-type: none;
+    }
+    .navlink a {
+        color: #3a3437;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    .burger {
+        font-size: 2em;
+        display: none;
+    }
+}
