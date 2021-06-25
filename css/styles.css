@@ -1,11 +1,11 @@
 /* HTML and Body styles */
 html, body {
-    background-color: #d2a39e;
+    background-color: #fff;
 }
 
 /* Header styles */
-#navId {
-    text-decoration: none;
+.nav {
+    background-color: #d2a39e;
 }
 
 /* Main styles */
