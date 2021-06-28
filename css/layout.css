@@ -1,5 +1,7 @@
 /* HTML and Body layout */
-
+html, body {
+    text-overflow: ellipsis;
+}
 
 /* Header layout */
 header {
@@ -37,6 +39,9 @@ header {
 }
 
 /* Main layout */
+h1 {
+    text-align: center;
+}
 .steps {
     display: flex;
     flex-flow: column;
@@ -69,6 +74,7 @@ footer {
     margin: .75em 0;
 }
 
+/* Media Queries */
 @media screen and (min-width: 700px) {
 
     header {
