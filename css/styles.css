@@ -1,22 +1,21 @@
 /* HTML and Body styles */
 html, body {
-    background-color: #fff;
+    background-color: #879D9D;
 }
 
 /* Header styles */
 .nav {
-    background-color: #d2a39e;
+    background-color: #879D9D;
 }
 
 /* Main styles */
 .steps {
-    background-color: #aea0ac;
-    color: #3A3437;
+    background-color: #879D9D;
 }
 
 .steps h3 {
-    background-color: #006987;
-    color: #aea0ac;
+    background-color: #241628;
+    color: #879D9D;
 
 }
 
