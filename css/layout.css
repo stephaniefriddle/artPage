@@ -1,7 +1,7 @@
-/* HTML and Body layout */
+/* HTML and Body layout 
 html, body {
-    text-overflow: ellipsis;
-}
+    width: 100%;
+}*/
 
 /* Header layout */
 header {
@@ -14,16 +14,15 @@ header {
 .nav {
     display: flex;
     position: absolute;
-    right: -100%;
     top: 70px;
     width: 40%;
     height: 50%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    transition: 400ms;
     list-style: none;
 }
+
 
 .nav a {
     text-decoration: none;
@@ -31,6 +30,11 @@ header {
 
 .nav-active {
     right: 0;
+}
+
+.nav-close {
+    display: none;
+    transition: 400ms;
 }
 
 .burger {
@@ -42,6 +46,7 @@ header {
 h1 {
     text-align: center;
 }
+
 .steps {
     display: flex;
     flex-flow: column;

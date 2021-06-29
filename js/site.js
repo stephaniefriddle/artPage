@@ -46,6 +46,7 @@ function toggleNav(){
 burger.classList.toggle('fa-bars');
 burger.classList.toggle('fa-times');
 nav.classList.toggle('nav-active');
+nav.classList.toggle('nav-close');
 }
 
 // Calling the function after click event occurs
