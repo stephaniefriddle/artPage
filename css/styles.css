@@ -4,8 +4,11 @@ html, body {
 }
 
 /* Header styles */
-.nav {
-    background-color: #879D9D;
+.nav-active {
+    background-color: #98e8ef;
+    border-style: double;
+    border-color: #241628;
+    border-radius: 30px;
 }
 
 /* Main styles */

@@ -5,10 +5,10 @@ const navs = [{
     Alt: 'Click here to visit home'
 },
 {
-    Text: 'Fluid Painting',
-    Url: 'fluidPainting.html',
-    Class: 'fluidPainting',
-    Alt: 'Click here to visit Fluid Painting'
+    Text: 'Fluid Art',
+    Url: 'fluidArt.html',
+    Class: 'fluidArt',
+    Alt: 'Click here to visit Fluid Art'
 },
 {
     Text: 'String Art',

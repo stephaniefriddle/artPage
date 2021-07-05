@@ -47,17 +47,23 @@ h1 {
     text-align: center;
 }
 
+.summary {
+    text-align: center;
+    margin: 2em 1em;
+}
 .steps {
     display: flex;
     flex-flow: column;
     margin: 2em 1em;
-    filter: drop-shadow(0 0 1rem darkgrey);
+    filter: drop-shadow(0 0 0.8rem #241628);
+    border-radius: 30px;
 }
 
 .steps h3 {
     padding: 1em 2em;
     text-align: center;
     margin-top: 0;
+    border-radius: 30px 30px 0 0;
 }
 
 .steps ul, .steps p {
