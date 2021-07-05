@@ -1,6 +1,6 @@
 /* HTML and Body styles */
 html, body {
-    background-color: #879D9D;
+    background-color: #98e8ef;
 }
 
 /* Header styles */
@@ -10,12 +10,12 @@ html, body {
 
 /* Main styles */
 .steps {
-    background-color: #879D9D;
+    background-color: #f1f3f0;
 }
 
 .steps h3 {
     background-color: #241628;
-    color: #879D9D;
+    color: #f1f3f0;
 
 }
 
