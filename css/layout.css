@@ -70,6 +70,11 @@ h1 {
     margin: 0 .75em 1em;
 }
 
+/* hides images 
+.hiddenImages {
+    display: none;
+}*/
+ 
 /* this keeps doing all h3's... only want first - which pseudo class selector works?
 I want to remove the top margin so it starts with the step color
 

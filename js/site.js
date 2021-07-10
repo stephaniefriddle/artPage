@@ -51,5 +51,32 @@ nav.classList.toggle('nav-active');
 
 // Calling the function after click event occurs
 burger.addEventListener('click', function() {
-toggleNav();
+    toggleNav();
+});
+
+
+//Hide/Show images
+const myHideButton = document.getElementById("hideButton");
+// const toggleImages = document.getElementsByClassName("hideImages");
+
+// myHideButton.addEventListener("click", () => {
+//     toggleImages.classList.toggle("hiddenImages");
+
+// });
+
+
+let toggleImages = document.getElementsByClassName("hideImages");
+
+function toggleImg() {
+    for (let i=0; i < toggleImages.length; i++) {
+        if (toggleImages[i].style.display === "none") {
+            toggleImages[i].style.display = "block";
+        } else {
+            toggleImages[i].style.display = "none";
+    }
+    }
+}
+
+myHideButton.addEventListener('click', function() {
+    toggleImg();
 });

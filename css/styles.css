@@ -1,11 +1,12 @@
 /* HTML and Body styles */
 html, body {
-    background-color: #98e8ef;
+    background-color: #85cfcb;
+    filter: brightness(110%);
 }
 
 /* Header styles */
 .nav-active {
-    background-color: #98e8ef;
+    background-color: #85cfcb;
     border-style: double;
     border-color: #241628;
     border-radius: 30px;
