@@ -57,13 +57,6 @@ burger.addEventListener('click', function() {
 
 //Hide/Show images
 const myHideButton = document.getElementById("hideButton");
-// const toggleImages = document.getElementsByClassName("hideImages");
-
-// myHideButton.addEventListener("click", () => {
-//     toggleImages.classList.toggle("hiddenImages");
-
-// });
-
 
 let toggleImages = document.getElementsByClassName("hideImages");
 

@@ -1,6 +1,7 @@
 /* HTML and Body layout */
 html, body {
     width: 100%;
+    font-family: 'Mitr', sans-serif;
 }
 
 /* Header layout */
@@ -10,7 +11,19 @@ header {
     justify-content: space-between;
     margin: 5% 5%;
 }
+ .logo {
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .65rem;
+ }
 
+ .logo img {
+     width: 20%;
+ }
+
+ 
 .nav {
     display: flex;
     position: absolute;
@@ -39,7 +52,8 @@ header {
 
 .burger {
     display: block;
-    padding-right: 60px;    
+    padding-right: 30px;
+    padding-left: 10px;
 }
 
 /* Main layout */
@@ -70,19 +84,7 @@ h1 {
     margin: 0 .75em 1em;
 }
 
-/* hides images 
-.hiddenImages {
-    display: none;
-}*/
  
-/* this keeps doing all h3's... only want first - which pseudo class selector works?
-I want to remove the top margin so it starts with the step color
-
-.steps h3:first-child {
-    margin-top: 0;
-}
-*/
-
 /* Footer layout */
 footer {
     text-align: center;
@@ -121,6 +123,11 @@ footer {
         font-weight: bold;
     }
     
+    .logo {
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
     .burger {
         font-size: 2em;
         display: none;
@@ -129,6 +136,12 @@ footer {
 
 /* Desktop layout */
 @media screen and (min-width: 900px) {
+
+    .logo {
+        justify-content: center;
+        font-size: 2em;
+    }
+
     /*div.row {
         clear: both;
     }
