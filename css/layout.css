@@ -2,6 +2,9 @@
 html, body {
     width: 100%;
     font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+    background-color: #85cfcb;
+    filter: brightness(110%);
 }
 
 /* Header layout */
@@ -11,12 +14,20 @@ header {
     justify-content: space-between;
     margin: 5% 5%;
 }
+
+.header {
+    background: url(../images/logoBackground.png) no-repeat center;
+    background-size: cover;
+    margin: auto;
+    filter: brightness(105%);
+}
+
  .logo {
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: .65rem;
+    font-size: .65em;
  }
 
  .logo img {
@@ -40,10 +51,15 @@ header {
 
 .nav a {
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-active {
     right: 0;
+    background-color: #85cfcb;
+    border-style: double;
+    border-color: #241628;
+    border-radius: 30px;
 }
 
 .nav-close {
@@ -59,11 +75,12 @@ header {
 /* Main layout */
 h1 {
     text-align: center;
+    font-weight: 300;
 }
 
 .summary {
     text-align: center;
-    margin: 2em 1em;
+    margin: 2em 3em;
 }
 
 button {
@@ -78,6 +95,7 @@ button {
     margin: 2em 1em;
     filter: drop-shadow(0 0 0.8rem #241628);
     border-radius: 30px;
+    background-color: #f1f3f0;
 }
 
 .steps h3 {
@@ -85,6 +103,9 @@ button {
     text-align: center;
     margin-top: 0;
     border-radius: 30px 30px 0 0;
+    background-color: #464152;
+    color: #f1f3f0;
+    font-weight: 300;
 }
 
 .steps img {
@@ -102,7 +123,9 @@ button {
 /* Footer layout */
 footer {
     text-align: center;
-    margin: .75em 0;
+    padding: 1em .5em;
+    background-color: #464152;
+    color: #f1f3f0;
 }
 
 /* Tablet layout */
@@ -111,6 +134,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: auto;
+        padding-top: 30px;
     }
 
     .nav {
@@ -144,6 +168,10 @@ footer {
         font-size: 1.5em;
     }
 
+    .logo img {
+        margin-top: 8px;
+    }
+
     .burger {
         font-size: 2em;
         display: none;
@@ -168,29 +196,4 @@ footer {
         flex-direction: column;
         padding: 30px;
     }
-
-    /*div.row {
-        clear: both;
-    }
-    
-    div.row::after {
-        clear: both;
-        content: "";
-    }
-    
-    div[class^="col-"] {
-        float: left;
-    }
-    
-    .col-1-4 {
-        width: 25%;
-    }
-    
-    .col-3-4 {
-        width: 75%;
-    }
-
-    footer {
-        align-content: end;
-    }*/
 }
