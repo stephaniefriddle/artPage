@@ -10,7 +10,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
     />
     <!-- add font choice here if importing (google fonts is a good source)-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -18,89 +21,122 @@
   </head>
   <body>
     <header>
-      <h1 class="logo">Logo</h1>
-      <ul id="navId" class="nav"></ul>
-      <div class="burger">
+        <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+        <h1>art by stephanie</h1>
+        </div>
+        <ul id="navId" class="nav nav-close"></ul>
+        <div class="burger">
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <div id="mainContent">
-      <h1>Fluid Painting on Pots</h1>
-      <img src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
-      <p>This is where I give a project summary.</p>
-    
-    <div class="steps">
-        <h3>Step 1 - Get your materials together</h3>
-            <ul><!-- Is a list the best idea here, or should I choose something else? -->
-                <li>The canvas you're going to paint on - I'm using terricotta pots. I wanted to paint 
-                    some pots for plants and got a couple different sizes. Terricotta pots are really 
-                    cheap and I have a hard time finding ones in the stores I love and I think are 
-                    worth the price. I also hate how they feel, so painting over them is perfect.</li>
-                <li>Acrylic paints - you can buy ones ready to go for fluid art, but you can also make 
-                    your own for a lot cheaper. Keep in mind these will mix and swirl together, so 
-                    choose colors that blend well together. I learned using white in the mix as well, 
-                    although you don't see a lot of the white in the finished product.</li>
-                <li>FloTrol - this thins out the paint so it's more fluid. You can get it at home 
-                    improvment stores</li>
-                <li>Silicon - you only need a couple drops of this. You can find it at auto parts stores</li>
-                <li>Containers to mix your paint in - I'm just using plastic cups</li>
-                <li>Mixers - I have some thick popcicle sticks to mix each color</li>
-                <li>A heat source - if you have a heat gun, use that. I don't, so I'm using a hair
-                    dryer.</li>
-                <li>Work space protection - old newspapers laid out, that brown craft paper/packing material</li>
-                <li>Rubber gloves</li>
-                <li>An apron or some clothes you don't mind possibly getting paint on</li>
-            </ul>
+    <div class="sideBarWrap">
+        <div id="mainContent">
+            <h1>Fluid Art on Pots</h1>
+            <img src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            <p class="summary">Fluid art is really diverse in technique and usable canvases. I'm just starting to explore it
+            and have only done it on stretched canvases so far. I first tried it with a Meetup group a couple 
+            years ago. This time I wanted something different and I'll be using some terricotta pots. I 
+            wanted something to go out in the front of my home in this amazing armadillo frame planter I have. 
+            I've spent a lot of time looking for something to put in him, but haven't found the right peice 
+            that I want to spend the money on. So, I figured this would be a really great way to do some fluid 
+            painting on. I love how the colors mix and swirl around with fluid painting. 
+            </p>
+            <button id="hideButton">Hide images</button>
+            <div class="steps">
+                <h3>Step 1 - Get your materials together</h3>
+                    <ul><!-- Is a list the best idea here, or should I choose something else? -->
+                        <li>The canvas you're going to paint on - I'm using terricotta pots. I wanted to paint 
+                            some pots for plants and got a couple different sizes. Terricotta pots are really 
+                            cheap and I have a hard time finding ones in the stores I love and I think are 
+                            worth the price. I also hate how they feel, so painting over them is perfect.</li>
+                        <li>Acrylic paints - you can buy ones ready to go for fluid art, but you can also make 
+                            your own for a lot cheaper. Keep in mind these will mix and swirl together, so 
+                            choose colors that blend well together. I learned using white in the mix as well, 
+                            although you don't see a lot of the white in the finished product.</li>
+                        <li><a href=https://www.amazon.com/FLOOD-PPG-FLD6-04-Floetrol-Additive/dp/B000C029PM/ref=sr_1_6?dchild=1&keywords=floetrol&qid=1626119884&sr=8-6" 
+                            target="_blank">FloeTrol</a> - this thins out the paint so it's more fluid. You can get it at home 
+                            improvment stores</li>
+                        <li><a href=https://www.amazon.com/3-ONE-Fast-Acting-Penetrant-Drip/dp/B00J25JD6Q/ref=sr_1_9?dchild=1&keywords=3-IN-ONE&qid=1626119833&sr=8-9"
+                            target="_blank"> Silicone oil</a> - you only need a couple drops of this. You can find it at auto 
+                            parts stores or home improvment stores. This is what helps creates cells - so if you're not a fan, no need to put it in!
+                        </li>
+                        <li>Containers to mix your paint in - I'm just using plastic cups</li>
+                        <li>Mixers - I have some thick popcicle sticks to mix each color</li>
+                        <li>A heat source - if you have a heat gun, use that. I don't, so I'm using a hair
+                            dryer.</li>
+                        <li>Work space protection - old newspapers laid out, that brown craft paper/packing material</li>
+                        <li>Rubber gloves</li>
+                        <li>An apron or some clothes you don't mind possibly getting paint on</li>
+                    </ul>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 2 - Get your workspace in order</h3>
+                <p>I like to have everything laid out and ready. You can use the extra paint that drips to make
+                    more things too. So think coasters, key chains, things to cover in resin. Just dip these in
+                    your overflow paint for some bonus art!
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 3 - Mix your paint</h3>
+                <p>You're looking for a really runny solution here. You want to add a couple tablespoons of FloTrol
+                    to your cup of paint and 7 to 8 drops of the Silicon. Mix ALL your paint together before your 
+                    start.
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 4 - Get your canvas placed and ready</h3>
+                <p>If you're doing multiple, you'll need space for each one to dry. You can use the same pouring
+                    space if you don't mind some mixing on the bottom edge.
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 5 - Start painting!</h3>
+                <p>There's lots of techniques you can use. You can do a dirty pour - pouring your colors in a cup
+                    and then turning that upside down and letting everything flow out. You can go color by color
+                    for a little more control as well.
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 6 - Let your colors flow</h3>
+                <p>The whole idea is to let the colors flow with each other and cover your canvas. There's going 
+                    to be a lot that drips down and pools. You can guide the paint by moving around your canvas or
+                    gently spreading it out with a finger or tool to cover stubborn spots.
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 7 - You did it!</h3>
+                <p>Once your canvas is completely covered, or however you want it, find a place to let it dry.
+                    Keep in mind, the paint will still move and settle, and probably drip, so find a space that's
+                    protected. The paint can get pretty thick, so I'd give it at least 48 hours to dry. 
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+            <div class="steps">
+                <h3>Step 8 - Do your extras</h3>
+                <p>If you have extra items, now is the time to paint them. Just dip them in your pile of overflow
+                    paint and lift up and behold your "free" creation!
+                </p>
+                <img class="hideImages" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            </div>
+        </div>
+        <div class="sideBar">
+            <img src="images/logo.png" />
+            <p>Here's some sample text</p>
+            <img src="images/logo.png" />
+            <p>Here's some sample text</p>
+            <img src="images/logo.png" />
+            <p>Here's some sample text</p>
+
+        </div>
     </div>
-    <div class="steps">
-        <h3>Step 2 - Get your workspace in order</h3>
-        <p>I like to have everything laid out and ready. You can use the extra paint that drips to make
-            more things too. So think coasters, key chains, things to cover in resin. Just dip these in
-            your overflow paint for some bonus art!
-        </p>
-    </div>
-    <div class="steps">
-        <h3>Step 3 - Mix your paint</h3>
-        <p>You're looking for a really runny solution here. You want to add a couple tablespoons of FloTrol
-            to your cup of paint and 7 to 8 drops of the Silicon. Mix ALL your paint together before your 
-            start.
-        </p>
-    </div>
-    <div class="steps">
-        <h3>Step 4 - Get your canvas placed and ready</h3>
-        <p>If you're doing multiple, you'll need space for each one to dry. You can use the same pouring
-            space if you don't mind some mixing on the bottom edge.
-        </p>
-    </div>
-    <div class="steps">
-        <h3>Step 5 - Start painting!</h3>
-        <p>There's lots of techniques you can use. You can do a dirty pour - pouring your colors in a cup
-            and then turning that upside down and letting everything flow out. You can go color by color
-            for a little more control as well.
-        </p>
-    </div>
-    <div class="steps">
-        <h3>Step 6 - Let your colors flow</h3>
-        <p>The whole idea is to let the colors flow with each other and cover your canvas. There's going 
-            to be a lot that drips down and pools. You can guide the paint by moving around your canvas or
-            gently spreading it out with a finger or tool to cover stubborn spots.
-        </p>
-    </div>
-    <div class="steps">
-        <h3>Step 7 - You did it!</h3>
-        <p>Once your canvas is completely covered, or however you want it, find a place to let it dry.
-            Keep in mind, the paint will still move and settle, and probably drip, so find a space that's
-            protected. The paint can get pretty thick, so I'd give it at least 48 hours to dry. 
-        </p>
-    </div>
-    <div class="steps">
-        <h3>Step 8 - Do your extras</h3>
-        <p>If you have extra items, now is the time to paint them. Just dip them in your pile of overflow
-            paint and lift up and behold your "free" creation!
-        </p>
-    </div>
-</div>
-    <footer class="footer">
+    <footer class="footer row">
         This site was developed for consideration towards the completion of the Front End Web Development class in Code Louisville <br>
         &#169 2021 Stephanie Friddle 
     </footer>

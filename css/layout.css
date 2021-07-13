@@ -1,6 +1,7 @@
 /* HTML and Body layout */
 html, body {
-    text-overflow: ellipsis;
+    width: 100%;
+    font-family: 'Mitr', sans-serif;
 }
 
 /* Header layout */
@@ -10,20 +11,32 @@ header {
     justify-content: space-between;
     margin: 5% 5%;
 }
+ .logo {
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .65rem;
+ }
 
+ .logo img {
+     width: 20%;
+ }
+
+ 
 .nav {
     display: flex;
     position: absolute;
-    right: -100%;
     top: 70px;
     width: 40%;
-    height: 50%;
+    height: 350px;
+    transition: margin-left 400ms;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    transition: 400ms;
     list-style: none;
 }
+
 
 .nav a {
     text-decoration: none;
@@ -33,50 +46,67 @@ header {
     right: 0;
 }
 
+.nav-close {
+    display: none;
+}
+
 .burger {
     display: block;
-    padding-right: 60px;    
+    padding-right: 30px;
+    padding-left: 10px;
 }
 
 /* Main layout */
 h1 {
     text-align: center;
 }
+
+.summary {
+    text-align: center;
+    margin: 2em 1em;
+}
+
+button {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+
 .steps {
     display: flex;
     flex-flow: column;
-    margin: 0 0.5em;
+    margin: 2em 1em;
+    filter: drop-shadow(0 0 0.8rem #241628);
+    border-radius: 30px;
 }
 
 .steps h3 {
     padding: 1em 2em;
     text-align: center;
+    margin-top: 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.steps img {
+    border-radius: 0 0 30px 30px;
 }
 
 .steps ul, .steps p {
-    margin: 0 .75em;
+    margin: 0 .75em 1em;
 }
 
-/* this keeps doing all h3's... only want first - which pseudo class selector works?
-I want to remove the top margin so it starts with the step color
-
-.steps h3:first-child {
-    margin-top: 0;
+.sideBar {
+    display: none;
 }
-*/
-.steps:nth-child(10) {
-    padding-bottom: 1em;
-}
-
+ 
 /* Footer layout */
 footer {
     text-align: center;
     margin: .75em 0;
 }
 
-/* Media Queries */
-@media screen and (min-width: 700px) {
-
+/* Tablet layout */
+@media screen and (min-width: 550px) {
     header {
         display: flex;
         flex-direction: column;
@@ -88,7 +118,9 @@ footer {
         position: relative;
         right: auto;
         top: auto;
+        height: 70px;
         flex-direction: row;
+        align-items: center;
         width: 80%;
         padding: 0;
     }
@@ -107,9 +139,58 @@ footer {
         font-weight: bold;
     }
     
+    .logo {
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
     .burger {
         font-size: 2em;
         display: none;
     }
+}
 
+/* Desktop layout */
+@media screen and (min-width: 900px) {
+
+    .logo {
+        justify-content: center;
+        font-size: 2em;
+    }
+
+    .sideBarWrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sideBar {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    /*div.row {
+        clear: both;
+    }
+    
+    div.row::after {
+        clear: both;
+        content: "";
+    }
+    
+    div[class^="col-"] {
+        float: left;
+    }
+    
+    .col-1-4 {
+        width: 25%;
+    }
+    
+    .col-3-4 {
+        width: 75%;
+    }
+
+    footer {
+        align-content: end;
+    }*/
 }

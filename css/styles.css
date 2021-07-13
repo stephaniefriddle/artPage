@@ -1,21 +1,25 @@
 /* HTML and Body styles */
 html, body {
-    background-color: #879D9D;
+    background-color: #85cfcb;
+    filter: brightness(110%);
 }
 
 /* Header styles */
-.nav {
-    background-color: #879D9D;
+.nav-active {
+    background-color: #85cfcb;
+    border-style: double;
+    border-color: #241628;
+    border-radius: 30px;
 }
 
 /* Main styles */
 .steps {
-    background-color: #879D9D;
+    background-color: #f1f3f0;
 }
 
 .steps h3 {
     background-color: #241628;
-    color: #879D9D;
+    color: #f1f3f0;
 
 }
 

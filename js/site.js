@@ -5,10 +5,10 @@ const navs = [{
     Alt: 'Click here to visit home'
 },
 {
-    Text: 'Fluid Painting',
-    Url: 'fluidPainting.html',
-    Class: 'fluidPainting',
-    Alt: 'Click here to visit Fluid Painting'
+    Text: 'Fluid Art',
+    Url: 'fluidArt.html',
+    Class: 'fluidArt',
+    Alt: 'Click here to visit Fluid Art'
 },
 {
     Text: 'String Art',
@@ -45,10 +45,31 @@ const nav = document.querySelector('.nav');
 function toggleNav(){
 burger.classList.toggle('fa-bars');
 burger.classList.toggle('fa-times');
+nav.classList.toggle('nav-close');
 nav.classList.toggle('nav-active');
 }
 
 // Calling the function after click event occurs
 burger.addEventListener('click', function() {
-toggleNav();
+    toggleNav();
+});
+
+
+//Hide/Show images
+const myHideButton = document.getElementById("hideButton");
+
+let toggleImages = document.getElementsByClassName("hideImages");
+
+function toggleImg() {
+    for (let i=0; i < toggleImages.length; i++) {
+        if (toggleImages[i].style.display === "none") {
+            toggleImages[i].style.display = "block";
+        } else {
+            toggleImages[i].style.display = "none";
+    }
+    }
+}
+
+myHideButton.addEventListener('click', function() {
+    toggleImg();
 });
