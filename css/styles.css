@@ -87,7 +87,7 @@ button {
     display: flex;
     flex-grow: 2;
     justify-content: flex-end;
-    margin-left: 25px;
+    margin-left: 1em;
 }
 
 .steps {
@@ -176,6 +176,14 @@ footer {
     .burger {
         font-size: 2em;
         display: none;
+    }
+
+    .steps {
+        margin: 2em 3em;
+    }
+
+    button {
+        margin-left: 3em;
     }
 }
 
