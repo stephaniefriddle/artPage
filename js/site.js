@@ -64,8 +64,10 @@ function toggleImg() {
     for (let i=0; i < toggleImages.length; i++) {
         if (toggleImages[i].style.display === "none") {
             toggleImages[i].style.display = "block";
+            document.getElementById("hideButton").innerHTML = "Hide images";
         } else {
             toggleImages[i].style.display = "none";
+            document.getElementById("hideButton").innerHTML = "Show images";
     }
     }
 }
