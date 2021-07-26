@@ -1,29 +1,29 @@
-const navs = [{
-    Text: 'Home',
-    Url: 'index.html',
-    Class: 'home',
-    Alt: 'Click here to visit home'
-},
-{
-    Text: 'Fluid Art',
-    Url: 'fluidArt.html',
-    Class: 'fluidArt',
-    Alt: 'Click here to visit Fluid Art'
-},
-{
-    Text: 'String Art',
-    Url: 'stringArt.html',
-    Class: 'stringArt',
-    Alt: 'Click here to visit String Art'
-},
-{
-    Text: 'Alcohol Ink',
-    Url: 'alcoholInk.html',
-    Class: 'alcoholInk',
-    Alt: 'Click here to visit Alcohol Ink'
-}
-
-
+//Hamburger Menu
+const navs = [
+    {
+        Text: 'Home',
+        Url: 'index.html',
+        Class: 'home',
+        Alt: 'Click here to visit home'
+    },
+    {
+        Text: 'Fluid Art',
+        Url: 'fluidArt.html',
+        Class: 'fluidArt',
+        Alt: 'Click here to visit Fluid Art'
+    },
+    {
+        Text: 'String Art',
+        Url: 'stringArt.html',
+        Class: 'stringArt',
+        Alt: 'Click here to visit String Art'
+    },
+    {
+        Text: 'Alcohol Ink',
+        Url: 'alcoholInk.html',
+        Class: 'alcoholInk',
+        Alt: 'Click here to visit Alcohol Ink'
+    }
 ];
 
 // Loop that places list items to create the navBar. 
@@ -33,15 +33,11 @@ ${navs.map(nav => `<li class="navlink"><a href=${nav.Url} class="${nav.Class}" a
 
 document.querySelector('ul').innerHTML = navBarMarkup;
 
-// Creates hamburger icon for mobile navigation
-
 // Select HTML objects
-
 const burger = document.querySelector('.burger i');
 const nav = document.querySelector('.nav');
 
 // Defining a function
-
 function toggleNav(){
 burger.classList.toggle('fa-bars');
 burger.classList.toggle('fa-times');
@@ -52,6 +48,15 @@ nav.classList.toggle('nav-active');
 // Calling the function after click event occurs
 burger.addEventListener('click', function() {
     toggleNav();
+});
+
+
+//Close nav menu with window resize
+window.addEventListener('resize', function(){
+     if (window.innerWidth > 550) {
+        nav.classList.replace('nav-active', 'nav-close');
+        burger.classList.replace('fa-times', 'fa-bars');
+    }
 });
 
 
