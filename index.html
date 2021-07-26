@@ -29,10 +29,10 @@
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <div class="sideBarWrap">
+    <main class="sideBarWrap">
         <div id="mainContent">
             <h1>Fluid Art on Pots</h1>
-            <img src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
+            <img id="mainImg" src="images/pexels-luis-quintero-2471215.jpg" alt="Fluid Painting" width="100%" />
             <p class="summary">Fluid art is really diverse in technique and usable canvases. I'm just starting to explore it
             and have only done it on stretched canvases so far. I first tried it with a Meetup group a couple 
             years ago. This time I wanted something different and I'll be using some terricotta pots. I 
@@ -44,7 +44,7 @@
             <button id="hideButton">Hide images</button>
             <div class="steps">
                 <h3>Step 1 - Get your materials together</h3>
-                    <ul><!-- Is a list the best idea here, or should I choose something else? -->
+                    <ul>
                         <li>The canvas you're going to paint on - I'm using terricotta pots. I wanted to paint 
                             some pots for plants and got a couple different sizes. Terricotta pots are really 
                             cheap and I have a hard time finding ones in the stores I love and I think are 
@@ -130,16 +130,26 @@
                 <img class="hideImages" src="images/step8.jpg" alt="Fluid Painting" width="100%" />
             </div>
         </div>
-        <div class="sideBar">
-            <img src="images/logoFluidArt.png" />
-            <p>Here's some sample text</p>
-            <img src="images/logoFluidArt.png" />
-            <p>Here's some sample text</p>
-            <img src="images/logoFluidArt.png" />
-            <p>Here's some sample text</p>
-
-        </div>
-    </div>
+        <aside class="sideBar">
+            <div>
+                <h3>Check out my other projects!</h3>
+            </div>
+            <div class="otherProjects">
+                <div>
+                    <img src="images/logoFluidArt.png" />
+                    <p>Here's some sample text</p>
+                </div>
+                <div>
+                    <img src="images/logoFluidArt.png" />
+                    <p>Here's some sample text</p>
+                </div>
+                <div>
+                    <img src="images/logoFluidArt.png" />
+                    <p>Here's some sample text</p>
+                </div>
+            </div>
+        </aside>
+    </main>
     <footer class="footer">
         This site was developed for consideration towards the completion of the Front End Web Development class in Code Louisville <br>
         &#169 2021 Stephanie Friddle 
