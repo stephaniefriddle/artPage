@@ -14,7 +14,7 @@ You are currently reading the README file :)
 CSS Features
 
 * My navigation menu is a hamburger menu for mobile and for tablet and desktop changes to a horizontal list.
-* I used Flexbox to change the layout from single column on mobile and table to two columns on desktop.
+* I used Flexbox to change the layout from single column on mobile and tablet to two columns on desktop.
 
 JavaScript Features
 
