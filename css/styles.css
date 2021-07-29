@@ -170,7 +170,7 @@ button {
 .inputs input {
     border: 2px solid #464152;
     padding: 10px;
-    width: 80%;
+    width: 100%;
 }
 
 .inputs input:focus {
@@ -290,7 +290,8 @@ footer {
         display: flex;
         width: 100%;
         flex-direction: column;
-        margin: 1em 3em;
+        margin: 1em 2em;
+        min-width: 250px;
     }
 
     .otherProjects {
