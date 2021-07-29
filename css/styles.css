@@ -147,7 +147,16 @@ button {
 .otherProjects img {
     width: 50%;
 }
- 
+
+.inputs label {
+    line-height: 2.15;
+} 
+
+.submitButton input {
+    padding: .4em .75em;
+    margin: 1em 0;
+}
+
 /* Footer layout */
 footer {
     text-align: center;
@@ -240,5 +249,10 @@ footer {
 
     .otherProjects {
         flex-direction: column;
+    }
+
+    .inputs {
+        text-align: left;
+        margin-left: 20px;
     }
 }
