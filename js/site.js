@@ -80,3 +80,62 @@ function toggleImg() {
 myHideButton.addEventListener('click', function() {
     toggleImg();
 });
+
+
+//Form Validation
+
+const form = document.getElementById("form");
+const userName = document.getElementById("userName");
+const userEmail = document.getElementById("userEmail");
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    checkInputs();
+});
+
+function checkInputs() {
+    //get values from the inputs
+    const userNameValue = userName.value.trim();
+    const userEmailValue = userEmail.value.trim();
+
+    if(userNameValue === '') {
+        //show error
+        //add error class
+        setErrorFor(userName, 'Name cannot be blank');
+    } else {
+        //add success class
+        setSuccessFor(userName);
+    }
+
+    if(userEmailValue === '') {
+        setErrorFor(userEmail, 'Please enter a valid email address');
+    } else if(!isEmail(userEmailValue)) {
+        setErrorFor(userEmail, 'Email is not valid');
+    } else {
+        setSuccessFor(userEmail);
+    }
+
+    window.alert("Thanks for subscribing " + userNameValue + "!");
+    document.getElementById("form").reset();
+}
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    //add error message inside small 
+    small.innerText = message;
+
+    //add error class
+    formControl.className = 'inputs error'
+}
+
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'inputs success'
+}
+
+function isEmail(userEmail) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(userEmail);
+}

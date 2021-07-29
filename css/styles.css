@@ -127,6 +127,7 @@ button {
     margin: 0 .75em 1em;
 }
 
+/* Side Bar */
 .sideBar {
     width: 75%;
     text-align: center;
@@ -148,13 +149,57 @@ button {
     width: 50%;
 }
 
+/* Contact Form */
+.contactForm {
+    padding: .5em 1em 3em;
+    align-items: center;
+}
+
+.form {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
 .inputs label {
-    line-height: 2.15;
+    display: inline-block;
+    margin-bottom: 5px;
 } 
 
-.submitButton input {
-    padding: .4em .75em;
-    margin: 1em 0;
+.inputs input {
+    border: 2px solid #464152;
+    padding: 10px;
+    width: 80%;
+}
+
+.inputs input:focus {
+    outline: 0;
+    border-color: #241628 ;
+}
+
+.inputs.success input {
+    border-color: #2ecc71;
+}
+
+.inputs.error input {
+    border-color: #e74c3c;
+}
+
+.inputs small {
+	color: #e74c3c;
+	visibility: hidden;
+}
+
+.inputs.error small {
+	visibility: visible;
+}
+
+.form button {
+    padding: 10px;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
 }
 
 /* Footer layout */
@@ -243,6 +288,7 @@ footer {
 
     .sideBar {
         display: flex;
+        width: 100%;
         flex-direction: column;
         margin: 1em 3em;
     }
@@ -252,7 +298,12 @@ footer {
     }
 
     .inputs {
+        width: 100%;
         text-align: left;
-        margin-left: 20px;
+        margin-left: 10px;
+    }
+
+    .inputs input {
+        width: 100%;
     }
 }
