@@ -92,33 +92,44 @@ form.addEventListener('submit', e => {
     e.preventDefault();
 
     checkInputs();
+
 });
 
 function checkInputs() {
     //get values from the inputs
     const userNameValue = userName.value.trim();
     const userEmailValue = userEmail.value.trim();
+    let isValidName = false;
+    let isValidEmail = false;
+
 
     if(userNameValue === '') {
         //show error
         //add error class
         setErrorFor(userName, 'Name cannot be blank');
+        isValidName = false;
     } else {
         //add success class
         setSuccessFor(userName);
+        isValidName = true;
     }
 
     if(userEmailValue === '') {
         setErrorFor(userEmail, 'Please enter a valid email address');
     } else if(!isEmail(userEmailValue)) {
         setErrorFor(userEmail, 'Email is not valid');
+        isValidEmail = false;
     } else {
         setSuccessFor(userEmail);
+        isValidEmail = true;
     }
 
-    window.alert("Thanks for subscribing " + userNameValue + "!");
-    document.getElementById("form").reset();
+    if(isValidName && isValidEmail) {
+        window.confirm("Thanks for subscribing " + userNameValue + "!");
+        document.getElementById("form").reset();
+    }
 }
+
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
